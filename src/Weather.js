@@ -36,6 +36,15 @@ export default function Weather() {
     </form>
   );
 
+  <footer>
+    Open Sourced code on
+    <a href="https://app.netlify.com/sites/weather-react-prac/overview">
+      Github
+    </a>
+    <br></br>
+    <a href="https://strigenz-portfolio.netlify.app/">Portfolio Here</a>
+  </footer>;
+
   if (loaded) {
     return (
       <div>

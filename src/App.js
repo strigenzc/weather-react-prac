@@ -6,8 +6,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>Hello World</h2>
-        <p>Fake shit Im typing ispem</p>
+        <footer>
+          Open Sourced code on
+          <a href="https://app.netlify.com/sites/weather-react-prac/overview">
+            Github
+          </a>
+          <br></br>
+          <a href="https://strigenz-portfolio.netlify.app/">Portfolio Here</a>
+        </footer>
         <Weather />
       </header>
     </div>
