@@ -14,6 +14,7 @@ export default function Weather() {
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
       windSpeed: response.data.wind.speed,
+      city: response.data.name,
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
@@ -36,28 +37,19 @@ export default function Weather() {
     </form>
   );
 
-  <footer>
-    Open Sourced code on
-    <a href="https://app.netlify.com/sites/weather-react-prac/overview">
-      Github
-    </a>
-    <br></br>
-    <a href="https://strigenz-portfolio.netlify.app/">Portfolio Here</a>
-  </footer>;
-
   if (loaded) {
     return (
       <div>
         {form}
-        <h2>{city}</h2>
+        <h2>{weather.city}</h2>
         <ul>
-          <li>
-            <img src={weather.icon} alt={weather.description} />{" "}
-          </li>
           <li> Temperature: {Math.round(weather.temperature)} degrees </li>
           <li> Humidity: {weather.humidity} % </li>
           <li> Wind Speed: {weather.windSpeed} km/hr </li>
           <li> {weather.description} </li>
+          <li className="weather-icon">
+            <img src={weather.icon} alt={weather.description} />{" "}
+          </li>
         </ul>
       </div>
     );

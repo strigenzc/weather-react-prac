@@ -3,34 +3,71 @@
   margin: 30px auto;
 }
 
-body {
-  font-family: arial, sans-serif;
-}
-
 h1 {
-  color: #878787;
-  font-size: 24px;
-  font-weight: 100;
-  line-height: 28px;
-  margin-bottom: 0;
+  color: #22313f;
+  display: block;
+  font-size: 29px;
+  font-weight: 400;
+  text-align: center;
+  width: 326px;
+  margin: 0px 0px 15px;
 }
 
 ul {
-  margin: 0;
-  padding: 0;
+  margin: 0 0 10px;
+  padding: 10;
+  color: #34495e;
+  text-align: center;
 }
 
 li {
   list-style: none;
-  margin: 0;
-  padding: 0;
-
-  color: rgb(135, 135, 135);
+  color: dark grey;
+  display: block;
+  text-align: center;
   font-size: 16px;
   font-weight: 100;
-  line-height: 19px;
+  height: 15px;
+  line-height: 25px;
+  text-align: left;
 }
 
 li:first-letter {
   text-transform: capitalize;
+}
+
+footer {
+  font-size: x-small;
+  text-align: center;
+  color: #34495e;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  background: #e4f1fe;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.weather-app {
+  border: 1px solid #dadde1;
+  border-radius: 10px;
+  padding: 20px;
+  margin-right: 50px;
+  margin: 20px auto;
+  max-width: 700px;
+}
+
+.weather-search {
+  margin-bottom: 20px;
+}
+
+.weather-icon {
+  margin-bottom: 45px;
 }
